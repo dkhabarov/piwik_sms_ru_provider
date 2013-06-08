@@ -52,7 +52,7 @@ class Piwik_MobileMessaging_SMSProvider_Smsru extends Piwik_MobileMessaging_SMSP
 		$url = self::BASE_API_URL. $resource . '?' . http_build_query($parameters, '', '&');
 		$timeout = self::SOCKET_TIMEOUT;
 		$result = Piwik_Http::sendHttpRequestBy(Piwik_Http::getTransportMethod(), $url,$timeout,$userAgent = null,$destinationPath = null,$file = null,$followDepth = 0,$acceptLanguage = false,$acceptInvalidSslCertificate = true);
-        $info=preg_split('/\n/',$result);
+        	$info=preg_split('/\n/',$result);
 		if (strpos($result, self::ERROR_STRING) !== false) {
 			throw new Piwik_MobileMessaging_APIException(Piwik_Translate('MobileMessaging_sms_ru_error_message_str', $info[0]));
 		} elseif ($info[0] !== '100'){
