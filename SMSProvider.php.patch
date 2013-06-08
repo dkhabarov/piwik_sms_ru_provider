@@ -1,0 +1,26 @@
+--- SMSProvider.php.orig	2013-05-30 12:57:06.000000000 +0400
++++ SMSProvider.php	2013-06-07 15:27:44.000000000 +0400
+@@ -35,6 +35,23 @@
+ 			</li>
+ 			</ul>
+ 			',
++		'Smsru' => 'You can use <a target="_blank" href="?module=Proxy&action=redirect&url=http://hub21ru.sms.ru/"><img src="http://sms.ru/i/logo-blue.png?v3"></a> to send SMS Reports from Piwik.<br>
++			<ul>
++				<li>First, <a target="_blank" href="?module=Proxy&action=redirect&url=http://hub21ru.sms.ru/">register and get API Key</a> from sms.ru (Signup is free!)</li>
++				<li>Enter your API Key on this page.</li><br.
++				<i>About SMS.ru</i>
++				<ul>
++					<li>В 8 раз дешевле, чем отправка смс через телефон (<a target="_blank" href="?module=Proxy&action=redirect&url=http://hub21ru.sms.ru/?panel=price">Тарифы</a>)</li>
++					<li>Надежнее, чем через сайты операторов</li>
++					<li>Почта @sms.ru (электронные сообщения доставляются на ваш телефон)</li>
++					<li>СМС сообщения отправятся от номера вашего телефона, как будто вы ввели их через ваш телефон</li>
++					<li>Все ответы придут на ваш телефон</li>
++					<li>Бесплатные СМС группы для общения и оповещений</li>
++					<li>Можно изменить имя отправителя</li>
++					<li>Бесплатные СМС для программистов — <a target="_blank" href="?module=Proxy&action=redirect&url=http://hub21ru.sms.ru/?panel=main&subpanel=programmer">подробнее</a></li>
++				</ul>
++			</ul>
++		',
+     );
+ 
+     /**
